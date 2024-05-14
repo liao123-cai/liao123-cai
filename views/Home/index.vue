@@ -1,4 +1,6 @@
 <template>
-
-    我是home
+<div style="height: 500px;">
+    111
+</div>
+   
 </template>
