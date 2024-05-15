@@ -2,6 +2,7 @@
 import HomePanel from './HomePanel.vue'
 import { getGoodsAPI } from '@/apis/home'
 import { ref,onMounted} from 'vue'
+import GoodsItem from './GoodsItem.vue'
 const goodsProduct = ref([])
 const getGoods = async () => {
   const res = await getGoodsAPI()
@@ -20,10 +21,7 @@ onMounted( ()=> getGoods() )
       </RouterLink>
       <ul class="goods-list">
         <li v-for="goods in cate.goods" :key="goods.id">
-          <RouterLink to="/" class="goods-item">
-             <!-- 指令替换 -->
-            <img v-img-lazy="goods.picture" alt="" />
-          </RouterLink>
+    <GoodsItem :goods="goods" />
         </li>
       </ul>
     </div>
