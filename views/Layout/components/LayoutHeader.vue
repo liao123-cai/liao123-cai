@@ -1,6 +1,4 @@
 <script setup>
-import { getCategoryAPI } from '@/apis/layout';
-import { ref } from 'vue';
 import {useCategoryStore} from "@/stores/category";
 const categoryStore = useCategoryStore();
 
