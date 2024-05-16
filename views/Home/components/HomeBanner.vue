@@ -31,7 +31,7 @@ onMounted(() => getBanner())
   width: 1240px;
   height: 500px;
   position: absolute;
-  left: 0;
+  left: 0px;
   top: 0;
   z-index: 98;
 
